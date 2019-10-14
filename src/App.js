@@ -8,6 +8,7 @@ import PostsList from './components/posts/PostsList'
 
 //actions
 import { fetchAllPosts } from './store/posts/actions'
+import { fetchAllUsers } from './store/users/actions'
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
 
   useEffect(() => {
     dispatch(fetchAllPosts())
+    dispatch(fetchAllUsers())
   })
   return (
     <Router>
