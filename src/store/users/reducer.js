@@ -11,7 +11,7 @@ export default (state = initialState, action) => {
       return state
     
     case GET_ALL_USERS_SUCCESS:
-      return { ...state, all: [...state.all, action.payload] }
+      return { ...state, all: action.payload }
     
     case GET_ALL_USERS_FAILED:
       return { ...state, err: action.payload }
