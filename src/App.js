@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 //components
 import TopNav from './components/layout/TopNav'
 import PostsList from './components/posts/PostsList'
+import User from './components/users/User'
 
 //actions
 import { fetchAllPosts } from './store/posts/actions'
@@ -22,7 +23,7 @@ function App() {
     <Router>
       <div className="App">
         <TopNav />
-        <PostsList />
+        <User />
         {'App Here'}
       </div>
     </Router>
